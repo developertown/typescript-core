@@ -1,0 +1,63 @@
+{
+  "name": "core",
+  "version": "0.0.1",
+  "description": "A small library that adds common interfaces and entities",
+  "author": "DeveloperTown",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://developertown.visualstudio.com/DefaultCollection/Development%20Organization/_git/core"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^23.1.1",
+    "@types/node": "^10.3.4",
+    "jest": "^23.1.0",
+    "jest-junit-reporter": "^1.1.0",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
+  },
+  "jest": {
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "moduleNameMapper": {
+      "~(.*)$": "<rootDir>/$1"
+    },
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "node"
+    ],
+    "transform": {
+      ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/*.test.(ts|tsx)"
+    ],
+    "testResultsProcessor": "./node_modules/jest-junit-reporter",
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx,js}"
+    ],
+    "coverageDirectory": "./coverage",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "cobertura"
+    ]
+  }
+}
