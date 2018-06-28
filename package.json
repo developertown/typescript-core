@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://developertown.visualstudio.com/DefaultCollection/Development%20Organization/_git/core"
+    "url": "https://github.com/developertown/typescript-core"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
