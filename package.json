@@ -15,7 +15,12 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "npm run build -- -w",
+    "clean": "rm -rf dist; rm -rf coverage",
+    "start": "echo \"Error: no start specified\" && exit 1",
+    "test": "TEST_REPORT_PATH=./coverage NODE_ENV=test ./node_modules/.bin/jest",
+    "test:watch": "npm run test -- --watchAll",
+    "test:coverage": "npm run test -- --coverage=true"
   },
   "dependencies": {},
   "devDependencies": {
@@ -26,38 +31,5 @@
     "ts-jest": "^22.4.6",
     "tslint": "^5.10.0",
     "typescript": "^2.9.2"
-  },
-  "jest": {
-    "modulePaths": [
-      "<rootDir>"
-    ],
-    "moduleNameMapper": {
-      "~(.*)$": "<rootDir>/$1"
-    },
-    "testEnvironment": "node",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "json",
-      "node"
-    ],
-    "transform": {
-      ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
-    },
-    "testMatch": [
-      "**/__tests__/*.test.(ts|tsx)"
-    ],
-    "testResultsProcessor": "./node_modules/jest-junit-reporter",
-    "collectCoverageFrom": [
-      "src/**/*.{ts,tsx,js}"
-    ],
-    "coverageDirectory": "./coverage",
-    "coverageReporters": [
-      "json",
-      "lcov",
-      "text",
-      "cobertura"
-    ]
   }
 }

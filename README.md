@@ -19,4 +19,8 @@ export class Townie extends BaseEntity {
 
 ## Tests
 
-`npm test`
+### With Docker
+
+```
+docker-compose -p typescript-core -f ./deployment/development/docker-compose.yml -f ./deployment/development/docker-compose.test.yml run app
+```
