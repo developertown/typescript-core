@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  app:
+    build:
+      context: ../../
+      dockerfile: Dockerfile
+      target: development
+    restart: on-failure
+    volumes:
+      - ../../jest.config.js:/app/jest.config.js
+      - ../../package.json:/app/package.json
+      - ../../tsconfig.json:/app/tsconfig.json
+      - ../../tslint.json:/app/tslint.json
+      - ../../yarn.lock:/app/yarn.lock
+      - ../../src:/app/src
+      - node_modules:/app/node_modules
+    networks:
+      - backoffice
+
+volumes:
+  node_modules:
+
+networks:
+  backoffice:

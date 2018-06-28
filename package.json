@@ -1,0 +1,35 @@
+{
+  "name": "core",
+  "version": "0.0.1",
+  "description": "A small library that adds common interfaces and entities",
+  "author": "DeveloperTown",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/developertown/typescript-core"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "npm run build -- -w",
+    "clean": "rm -rf dist; rm -rf coverage",
+    "start": "echo \"Error: no start specified\" && exit 1",
+    "test": "TEST_REPORT_PATH=./coverage NODE_ENV=test ./node_modules/.bin/jest",
+    "test:watch": "npm run test -- --watchAll",
+    "test:coverage": "npm run test -- --coverage=true"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^23.1.1",
+    "@types/node": "^10.3.4",
+    "jest": "^23.1.0",
+    "jest-junit-reporter": "^1.1.0",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
+  }
+}
