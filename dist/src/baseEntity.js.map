@@ -1,1 +1,1 @@
-{"version":3,"file":"baseEntity.js","sourceRoot":"","sources":["../../src/baseEntity.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;;AAIb;IAGE,YAAY,OAAa;QACvB,IAAI,CAAC,EAAE,GAAG,OAAO,CAAC,EAAE,CAAC;IACvB,CAAC;CACF;AAND,gCAMC"}
+{"version":3,"file":"baseEntity.js","sourceRoot":"","sources":["../../src/baseEntity.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;;AAIb;IAGE,oBAAY,OAAa;QACvB,IAAI,CAAC,EAAE,GAAG,OAAO,CAAC,EAAE,CAAC;IACvB,CAAC;IACH,iBAAC;AAAD,CAAC,AAND,IAMC;AANY,gCAAU"}

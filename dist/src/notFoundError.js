@@ -1,15 +1,28 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
-const baseError_1 = require("./baseError");
-class NotFoundError extends baseError_1.BaseError {
-    constructor(message) {
-        super(message);
-        this.message = message;
-        Object.setPrototypeOf(this, NotFoundError.prototype);
+var baseError_1 = require("./baseError");
+var NotFoundError = /** @class */ (function (_super) {
+    __extends(NotFoundError, _super);
+    function NotFoundError(message) {
+        var _this = _super.call(this, message) || this;
+        _this.message = message;
+        Object.setPrototypeOf(_this, NotFoundError.prototype);
         if (typeof Error.captureStackTrace === "function") {
-            Error.captureStackTrace(this, this.constructor);
+            Error.captureStackTrace(_this, _this.constructor);
         }
+        return _this;
     }
-}
+    return NotFoundError;
+}(baseError_1.BaseError));
 exports.NotFoundError = NotFoundError;
 //# sourceMappingURL=notFoundError.js.map

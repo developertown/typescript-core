@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const Identifiers = {
+var Identifiers = {
     Database: Symbol("Database"),
     Logger: Symbol("Logger"),
     RemoteLogger: Symbol("RemoteLogger"),
