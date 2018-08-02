@@ -1,25 +1,12 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 Object.defineProperty(exports, "__esModule", { value: true });
-var BaseError = /** @class */ (function (_super) {
-    __extends(BaseError, _super);
-    function BaseError(message) {
-        var _this = _super.call(this, message) || this;
-        _this.message = message;
-        Object.setPrototypeOf(_this, BaseError.prototype);
-        Error.captureStackTrace(_this, _this.constructor);
-        return _this;
+class BaseError extends Error {
+    constructor(message) {
+        super(message);
+        this.message = message;
+        Object.setPrototypeOf(this, BaseError.prototype);
+        Error.captureStackTrace(this, this.constructor);
     }
-    return BaseError;
-}(Error));
+}
 exports.BaseError = BaseError;
 //# sourceMappingURL=baseError.js.map
