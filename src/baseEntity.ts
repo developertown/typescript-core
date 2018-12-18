@@ -1,5 +1,3 @@
-"use strict";
-
 import { RepositoryId } from "./iRepository";
 
 export class BaseEntity {

@@ -1,5 +1,3 @@
-"use strict";
-
 import { BaseError } from "./baseError";
 
 export class ValidationError extends BaseError {

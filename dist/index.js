@@ -5,7 +5,8 @@ function __export(m) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./src/baseEntity"));
 __export(require("./src/baseError"));
-__export(require("./src/identifiers"));
+__export(require("./src/iDatabase"));
+__export(require("./src/iLogger"));
 __export(require("./src/notFoundError"));
 __export(require("./src/uniqueConstraintError"));
 __export(require("./src/validationError"));

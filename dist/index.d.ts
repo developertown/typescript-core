@@ -1,7 +1,6 @@
 export * from "./src/baseEntity";
 export * from "./src/baseError";
 export * from "./src/iDatabase";
-export * from "./src/identifiers";
 export * from "./src/iFindOptions";
 export * from "./src/iLogger";
 export * from "./src/iMapper";

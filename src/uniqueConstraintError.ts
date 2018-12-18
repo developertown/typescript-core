@@ -1,5 +1,3 @@
-"use strict";
-
 import { ValidationError } from "./validationError";
 
 export class UniqueConstraintError extends ValidationError {

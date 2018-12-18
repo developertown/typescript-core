@@ -1,5 +1,3 @@
-"use strict";
-
 import { BaseEntity } from "./baseEntity";
 import { IFindOptions } from "./iFindOptions";
 

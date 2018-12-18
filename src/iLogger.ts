@@ -1,5 +1,5 @@
-"use strict";
-
+export const Logger = Symbol("Logger");
+export const RemoteLogger = Symbol("RemoteLogger");
 export interface ILogger {
   debug(format: string, ...params: any[]): void;
   info(format: string, ...params: any[]): void;

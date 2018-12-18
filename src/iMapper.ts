@@ -1,5 +1,3 @@
-"use strict";
-
 import { BaseEntity } from "./baseEntity";
 
 export interface IMapper<T extends BaseEntity> {
